@@ -12,7 +12,16 @@
   "translate_tabs_to_spaces": true,
   "detect_indentation": false,
   "use_tab_stops": true,
+  "shift_tab_unindent": true,
 
   // don't ignore VIM mode!
-  "ignored_packages": []
+  "ignored_packages": [],
+
+  // style stuff
+  "highlight_line": true,
+  "caret_style": "phase",
+  "show_tab_close_buttons": false,
+  "bold_folder_labels": true,
+
+  "save_on_focus_lost": false,
 }
