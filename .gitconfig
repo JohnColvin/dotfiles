@@ -6,6 +6,7 @@
 
 [core]
   excludesfile = /opt/boxen/config/git/gitignore
+  editor = subl3 -w
 
 [user]
   name = John Colvin
@@ -17,3 +18,5 @@
 [alias]
   st = status
   co = checkout
+  put = push origin HEAD
+  jedi = push --force origin
