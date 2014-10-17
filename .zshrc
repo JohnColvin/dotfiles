@@ -73,6 +73,12 @@ export PATH="/opt/boxen/rbenv/shims:/opt/boxen/rbenv/bin:/opt/boxen/rbenv/plugin
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
+alias b="bundle"
+alias bails="bundle exec rails"
+alias bake="bundle exec rake"
 alias be="bundle exec"
+alias g="git"
+alias k="rake"
+alias r="rails"
 
 source /opt/boxen/env.sh
