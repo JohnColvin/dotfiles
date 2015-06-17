@@ -19,4 +19,8 @@
   st = status
   co = checkout
   put = push origin HEAD
-  jedi = push --force origin
+  jedi = push --force origin HEAD
+  d = diff
+  l = log --pretty=oneline --abbrev-commit
+  b = branch
+
