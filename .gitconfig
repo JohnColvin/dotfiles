@@ -18,9 +18,13 @@
 [alias]
   st = status
   co = checkout
-  put = push origin HEAD
-  jedi = push --force origin HEAD
   d = diff
   l = log --pretty=oneline --abbrev-commit
   b = branch
-
+  cp = cherry-pick
+  amend = commit --amend -C HEAD
+  fix = commit --fixup
+  jedi = push --force origin HEAD
+  put = push origin HEAD
+  squash = rebase -i --autosquash
+  up = pull -r

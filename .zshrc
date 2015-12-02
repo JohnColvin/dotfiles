@@ -82,3 +82,5 @@ alias k="rake"
 alias r="rails"
 
 source /opt/boxen/env.sh
+
+unsetopt AUTO_CD
