@@ -22,9 +22,10 @@
   l = log --pretty=oneline --abbrev-commit
   b = branch
   cp = cherry-pick
+  r = rebase
   amend = commit --amend -C HEAD
   fix = commit --fixup
-  jedi = push --force origin HEAD
+  jedi = push --force-with-lease origin HEAD
   put = push origin HEAD
   squash = rebase -i --autosquash
   up = pull -r
