@@ -83,4 +83,6 @@ alias r="rails"
 
 source /opt/boxen/env.sh
 
+export DOCKER_HOST="tcp://192.168.64.2:2375"
+
 unsetopt AUTO_CD
