@@ -3,9 +3,6 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
 export EDITOR='vim'
 
 alias b="bundle"
-alias bails="bundle exec rails"
-alias bake="bundle exec rake"
-alias be="bundle exec"
 alias g="git"
 alias k="rake"
 alias r="rails"

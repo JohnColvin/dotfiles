@@ -29,3 +29,6 @@
   put = push origin HEAD
   squash = rebase -i --autosquash
   up = pull -r
+
+[gitsh]
+  prompt = %c%b%w
