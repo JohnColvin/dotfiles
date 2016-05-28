@@ -6,7 +6,7 @@
 
 [core]
   excludesfile = /opt/boxen/config/git/gitignore
-  editor = subl3 -w
+  editor = vim
 
 [user]
   name = John Colvin

@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+chsh -s /bin/zsh
+
+bash ~/src/dotfiles/.osx
+
+ln -sf ~/src/dotfiles/.gitconfig ~/.gitconfig
+ln -sf ~/src/dotfiles/.gitignore ~/.gitignore
+ln -sf ~/src/dotfiles/.zshrc ~/.zshrc
+ln -sf ~/src/dotfiles/bundler-config ~/.bundle/config
+ln -sf ~/src/dotfiles/atom-config.cson ~/.atom/config.cson

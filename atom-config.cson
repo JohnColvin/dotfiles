@@ -1,0 +1,16 @@
+"*":
+  autosave:
+    enabled: true
+  core:
+    openEmptyEditorOnStart: false
+  editor:
+    fontSize: 12
+    preferredLineLength: 100
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
+    tabType: "soft"
+  "exception-reporting":
+    userId: "3bbeb49c-5377-98d2-2d32-41871e710c95"
+  welcome:
+    showOnStartup: false
