@@ -1,11 +1,19 @@
 #!/usr/bin/env bash
 
-chsh -s /bin/zsh
+brew bundle
 
 bash ~/src/dotfiles/.osx
 
 ln -sf ~/src/dotfiles/.gitconfig ~/.gitconfig
 ln -sf ~/src/dotfiles/.gitignore ~/.gitignore
-ln -sf ~/src/dotfiles/.zshrc ~/.zshrc
+ln -sf ~/src/dotfiles/config.fish ~/.config/fish/config.fish
 ln -sf ~/src/dotfiles/bundler-config ~/.bundle/config
 ln -sf ~/src/dotfiles/atom-config.cson ~/.atom/config.cson
+
+if [[ $(dscl . -read /Users/`id -un`/ UserShell) =~ .*fish$ ]];
+then
+  echo "Shell already set to fish"
+else
+  echo `which fish` | sudo tee -a /etc/shells
+  chsh -s `which fish`
+fi

@@ -1,10 +1,10 @@
 brew 'dnsmasq'
+brew 'fish'
 brew 'node'
 brew 'rbenv'
 brew 'ruby-build'
 brew 'the_silver_searcher'
 brew 'thoughtbot/formulae/gitsh'
-brew 'zsh'
 
 tap 'caskroom/cask'
 tap 'caskroom/versions'
