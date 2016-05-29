@@ -13,3 +13,5 @@ unsetopt AUTO_CD
 
 PROMPT='❯ '
 RPROMPT='%~'
+
+eval "$(rbenv init -)"
