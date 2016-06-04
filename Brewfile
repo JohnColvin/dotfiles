@@ -11,6 +11,7 @@ tap 'caskroom/versions'
 
 cask '1password'
 cask 'atom'
+cask 'caffeine'
 cask 'cloud'
 cask 'dash'
 cask 'flux'
