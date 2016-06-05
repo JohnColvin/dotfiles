@@ -4,7 +4,9 @@ brew 'node'
 brew 'rbenv'
 brew 'ruby-build'
 brew 'the_silver_searcher'
-brew 'thoughtbot/formulae/gitsh'
+
+tap 'thoughtbot/formulae'
+brew 'gitsh'
 
 tap 'caskroom/cask'
 tap 'caskroom/versions'
