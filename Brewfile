@@ -24,5 +24,6 @@ cask 'rowanj-gitx'
 cask 'sizeup'
 cask 'skype'
 cask 'slack'
+cask 'whatsapp'
 
 tap 'homebrew/services'
