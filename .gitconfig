@@ -28,7 +28,7 @@
   jedi = push --force-with-lease origin HEAD
   put = push origin HEAD
   squash = rebase -i --autosquash
-  up = pull -r
+  up = !git pull -r origin $(git symbolic-ref --short HEAD)
 
 [gitsh]
   prompt = %c%b%w
