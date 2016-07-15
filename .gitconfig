@@ -16,18 +16,25 @@
   default = simple
 
 [alias]
-  st = status
-  co = checkout
-  d = diff
-  l = log --pretty=oneline --abbrev-commit
-  b = branch
-  cp = cherry-pick
-  r = rebase
   amend = commit --amend -C HEAD
+  b = branch
+  c = commit
+  co = checkout
+  cp = cherry-pick
+  cpa = cherry-pick --abort
+  cpc = cherry-pick --continue
+  d = diff
+  f = commit --fixup
   fix = commit --fixup
   jedi = push --force-with-lease origin HEAD
+  l = log --pretty=oneline --abbrev-commit
   put = push origin HEAD
+  r = rebase
+  ra = rebase --abort
+  rc = rebase --continue
+  s = rebase -i --autosquash
   squash = rebase -i --autosquash
+  st = status
   up = !git pull -r origin $(git symbolic-ref --short HEAD)
 
 [gitsh]
