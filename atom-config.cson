@@ -14,3 +14,5 @@
     userId: "037b5cab-946f-3b30-b776-28fcb6c15834"
   welcome:
     showOnStartup: false
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false

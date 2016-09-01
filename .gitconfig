@@ -1,12 +1,9 @@
 [hub]
   protocol = https
 
-[credential]
-  helper = /opt/boxen/bin/boxen-git-credential
-
 [core]
-  excludesfile = /opt/boxen/config/git/gitignore
-  editor = vim
+  excludesfile = ~/.gitignore
+  editor = atom --wait
 
 [user]
   name = John Colvin
@@ -24,6 +21,7 @@
   cpa = cherry-pick --abort
   cpc = cherry-pick --continue
   d = diff
+  dc = diff --cached
   f = commit --fixup
   fix = commit --fixup
   jedi = push --force-with-lease origin HEAD
@@ -32,6 +30,7 @@
   r = rebase
   ra = rebase --abort
   rc = rebase --continue
+  rs = rebase --skip
   s = rebase -i --autosquash
   squash = rebase -i --autosquash
   st = status
