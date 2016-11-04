@@ -1,6 +1,6 @@
 set PATH /usr/local/bin /usr/bin /bin /usr/sbin /sbin
 
-set EDITOR vim
+set EDITOR atom
 
 alias b bundle
 alias g git

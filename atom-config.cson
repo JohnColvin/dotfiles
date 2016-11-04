@@ -2,7 +2,12 @@
   autosave:
     enabled: true
   core:
+    customFileTypes:
+      "text.slim": [
+        "slm"
+      ]
     openEmptyEditorOnStart: false
+    telemetryConsent: "no"
   editor:
     fontSize: 12
     preferredLineLength: 100
@@ -16,3 +21,6 @@
     showOnStartup: false
   whitespace:
     ignoreWhitespaceOnCurrentLine: false
+".slim.text":
+  editor:
+    preferredLineLength: 100

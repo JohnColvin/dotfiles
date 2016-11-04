@@ -3,7 +3,7 @@
 
 [core]
   excludesfile = ~/.gitignore
-  editor = atom --wait
+  editor = vim
 
 [user]
   name = John Colvin
@@ -13,27 +13,43 @@
   default = simple
 
 [alias]
-  amend = commit --amend -C HEAD
+  a = add
+  aa = add .
   b = branch
+  bd = branch -D
   c = commit
   co = checkout
+  cob = checkout -b
+  com = checkout master
   cp = cherry-pick
   cpa = cherry-pick --abort
   cpc = cherry-pick --continue
   d = diff
   dc = diff --cached
+  e = reset
+  eh = reset --hard
+  ehh = "!f() { git reset --hard HEAD~$1; }; f"
   f = commit --fixup
-  fix = commit --fixup
+  fh = "!f() { git commit --fixup HEAD~$1; }; f"
   jedi = push --force-with-lease origin HEAD
   l = log --pretty=oneline --abbrev-commit
+  m = commit --amend -C HEAD
+  ma = commit --amend -C HEAD -a
+  p = push origin HEAD
+  pf = push --force-with-lease origin HEAD
   put = push origin HEAD
+  q = rebase -i --autosquash
+  qh = "!f() { git rebase -i --autosquash HEAD~$1; }; f"
   r = rebase
   ra = rebase --abort
   rc = rebase --continue
+  rem = rebase master
+  ri = rebase -i
+  rih = "!f() { git rebase -i HEAD~$1; }; f"
   rs = rebase --skip
-  s = rebase -i --autosquash
-  squash = rebase -i --autosquash
-  st = status
+  s = show
+  sh = "!f() { git show HEAD~$1; }; f"
+  u = !git pull -r origin $(git symbolic-ref --short HEAD)
   up = !git pull -r origin $(git symbolic-ref --short HEAD)
 
 [gitsh]
