@@ -14,9 +14,6 @@ bash ~/src/dotfiles/setup
 
 Restart OS X
 
-Install pow
-curl get.pow.cx | sh
-
 Start all homebrew services
 brew services start --all
 
