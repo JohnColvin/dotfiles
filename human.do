@@ -7,8 +7,6 @@ mkdir ~/src
 Clone dotfiles
 git clone https://github.com/JohnColvin/dotfiles.git ~/src/dotfiles
 
-OS X will prompt to install command line tools because it needs git
-
 Run dotfiles setup
 bash ~/src/dotfiles/setup
 
