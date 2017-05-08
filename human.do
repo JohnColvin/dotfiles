@@ -10,7 +10,7 @@ git clone https://github.com/JohnColvin/dotfiles.git ~/src/dotfiles
 Run dotfiles setup
 bash ~/src/dotfiles/setup
 
-Restart OS X
+Restart macOS
 
 Start all homebrew services
 brew services start --all
