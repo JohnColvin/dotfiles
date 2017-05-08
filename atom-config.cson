@@ -1,4 +1,6 @@
 "*":
+  "autocomplete-plus":
+    confirmCompletion: "tab always, enter when suggestion explicitly selected"
   autosave:
     enabled: true
   core:
@@ -6,6 +8,9 @@
       "text.slim": [
         "slm"
       ]
+    disabledPackages: [
+      "linter-rubocop"
+    ]
     openEmptyEditorOnStart: false
     telemetryConsent: "no"
   editor:
