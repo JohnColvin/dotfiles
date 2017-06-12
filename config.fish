@@ -17,6 +17,6 @@ function fish_right_prompt
   echo (pwd | sed -e "s|^$HOME|~|")
 end
 
-set -e fish_greeting
+set fish_greeting
 
-status --is-interactive; and . (rbenv init -|psub)
+status --is-interactive; and source (rbenv init -|psub)
