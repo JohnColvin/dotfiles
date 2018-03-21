@@ -3,6 +3,7 @@ set PATH /usr/local/bin /usr/bin /bin /usr/sbin /sbin
 set EDITOR atom
 
 alias b bundle
+alias be "bundle exec"
 alias g git
 alias k rake
 alias r rails
