@@ -1,6 +1,5 @@
 "*":
-  "autocomplete-plus":
-    confirmCompletion: "tab always, enter when suggestion explicitly selected"
+  "autocomplete-plus": {}
   autosave:
     enabled: true
   core:
