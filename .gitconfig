@@ -39,7 +39,10 @@
   pf = push --force-with-lease origin HEAD
   put = push origin HEAD
   q = rebase -i --autosquash
-  qh = "!f() { git rebase -i --autosquash HEAD~$1; }; f"
+  qh = "!f() { git rebase --autosquash HEAD~$1; }; f"
+  qih = "!f() { git rebase -i --autosquash HEAD~$1; }; f"
+  qm = rebase --autosquash master
+  qim = rebase -i --autosquash master
   r = rebase
   ra = rebase --abort
   rc = rebase --continue
