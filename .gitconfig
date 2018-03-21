@@ -57,3 +57,5 @@
 
 [gitsh]
   prompt = %c%b%w
+[gitsh "color"]
+	default = green
