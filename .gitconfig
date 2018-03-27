@@ -59,3 +59,9 @@
   prompt = %c%b%w
 [gitsh "color"]
 	default = green
+  untracked = magenta
+  modified = cyan
+[color "status"]
+	added = blue
+	changed = cyan
+	untracked = magenta
