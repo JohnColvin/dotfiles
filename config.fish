@@ -13,7 +13,6 @@ alias nr "npm run"
 alias ns "npm run start"
 alias r rails
 
-
 set DOCKER_HOST tcp://192.168.64.2:2375
 
 function fish_prompt
