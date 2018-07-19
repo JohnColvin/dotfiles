@@ -6,7 +6,13 @@ alias b bundle
 alias be "bundle exec"
 alias g git
 alias k rake
+alias n npm
+alias ni "npm install"
+alias nm "npm run mobile"
+alias nr "npm run"
+alias ns "npm run start"
 alias r rails
+
 
 set DOCKER_HOST tcp://192.168.64.2:2375
 
