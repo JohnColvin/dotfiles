@@ -49,6 +49,7 @@
   rem = rebase master
   ri = rebase -i
   rih = "!f() { git rebase -i HEAD~$1; }; f"
+  rim = rebase -i master
   rs = rebase --skip
   s = show
   sh = "!f() { git show HEAD~$1; }; f"
