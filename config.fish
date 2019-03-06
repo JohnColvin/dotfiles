@@ -4,6 +4,9 @@ set EDITOR atom
 
 alias b bundle
 alias be "bundle exec"
+alias dbm "bundle exec rake db:migrate"
+alias dbr "bundle exec rake db:rollback"
+alias dbtp "bundle exec rake db:test:prepare"
 alias g git
 alias k rake
 alias n npm
