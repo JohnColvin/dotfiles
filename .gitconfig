@@ -26,6 +26,7 @@
   cpc = cherry-pick --continue
   d = diff
   dc = diff --cached
+  dm = diff master
   e = reset
   eh = reset --hard
   ehh = "!f() { git reset --hard HEAD~$1; }; f"
@@ -35,9 +36,8 @@
   l = log --pretty=oneline --abbrev-commit
   m = commit --amend -C HEAD
   ma = commit --amend -C HEAD -a
-  p = push origin HEAD
-  pf = push --force-with-lease origin HEAD
-  put = push origin HEAD
+  p = push -u origin HEAD
+  pf = push --force-with-lease -u origin HEAD
   q = rebase -i --autosquash
   qh = "!f() { git rebase --autosquash HEAD~$1; }; f"
   qih = "!f() { git rebase -i --autosquash HEAD~$1; }; f"
