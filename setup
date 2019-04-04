@@ -8,8 +8,11 @@ bash ~/src/dotfiles/.macos
 
 ln -sf ~/src/dotfiles/.gitconfig ~/.gitconfig
 ln -sf ~/src/dotfiles/.gitignore ~/.gitignore
+mkdir ~/.config/fish
 ln -sf ~/src/dotfiles/config.fish ~/.config/fish/config.fish
+mkdir ~/.bundle
 ln -sf ~/src/dotfiles/bundler-config ~/.bundle/config
+mkdir ~/.atom
 ln -sf ~/src/dotfiles/atom-config.cson ~/.atom/config.cson
 ln -sf ~/src/dotfiles/.gemrc ~/.gemrc
 sudo ln -sf ~/src/dotfiles/hosts /etc/hosts
