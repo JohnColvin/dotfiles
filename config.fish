@@ -9,8 +9,7 @@ alias dbr "bundle exec rake db:rollback"
 alias dbtp "bundle exec rake db:test:prepare"
 alias g git
 alias k rake
-alias n npm
-alias ni "npm install"
+alias ni "npm install --no-save"
 alias nm "npm run mobile"
 alias nr "npm run"
 alias ns "npm run start"
