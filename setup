@@ -6,6 +6,8 @@ brew bundle --file=~/src/dotfiles/Brewfile
 
 bash ~/src/dotfiles/.macos
 
+npm install -g n
+
 ln -sf ~/src/dotfiles/.gitconfig ~/.gitconfig
 ln -sf ~/src/dotfiles/.gitignore ~/.gitignore
 mkdir ~/.config/fish
