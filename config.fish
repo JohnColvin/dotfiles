@@ -20,12 +20,9 @@ alias wps "env NODE_ENV=development ./node_modules/.bin/webpack-dev-server -d --
 
 set DOCKER_HOST tcp://192.168.64.2:2375
 
-function eyd --description 'ey deploy' --argument-names environment ref
+function eyd --description 'ey deploy with defaults' --argument-names environment ref
+  test -n "$ref" || set ref master
   ey deploy --serverside-version=2.6.19 -e $environment -R $ref
-end
-
-function eydm --description 'ey deploy master' --argument-names environment
-  ey deploy --serverside-version=2.6.19 -e $environment -R master
 end
 
 function fish_prompt
