@@ -33,6 +33,11 @@
   ehh = "!f() { git reset --hard HEAD~$1; }; f"
   f = commit --fixup
   fh = "!f() { git commit --fixup HEAD~$1; }; f"
+  i = bisect
+  ib = bisect bad
+  ig = bisect good
+  ir = bisect reset
+  is = bisect start
   jedi = push --force-with-lease origin HEAD
   l = log --pretty=oneline --abbrev-commit
   m = commit --amend -C HEAD
