@@ -1,0 +1,21 @@
+{
+    "workbench.activityBar.visible": false,
+    "editor.minimap.enabled": false,
+    "workbench.colorCustomizations":
+    {
+        "statusBar.background" : "#303030",
+        "statusBar.noFolderBackground" : "#222225",
+        "statusBar.debuggingBackground": "#511f1f"
+    },
+    "editor.tabSize": 2,
+    "editor.renderWhitespace": "boundary",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "[ruby]": {},
+    "files.autoSave": "onFocusChange",
+    "editor.rulers": [
+        80,
+        100
+    ],
+    "window.zoomLevel": 0
+}
