@@ -7,8 +7,7 @@ brew 'the_silver_searcher'
 tap 'thoughtbot/formulae'
 brew 'gitsh'
 
-tap 'caskroom/cask'
-tap 'caskroom/versions'
+tap 'homebrew/cask-versions'
 
 cask '1password'
 cask 'brave-browser'
