@@ -10,6 +10,7 @@ brew 'gitsh'
 tap 'homebrew/cask-versions'
 
 cask '1password'
+cask 'authy'
 cask 'brave-browser'
 cask 'cloudapp'
 cask 'chromium'

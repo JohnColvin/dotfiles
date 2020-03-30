@@ -237,6 +237,12 @@
         "options": {
           "full_name": "visual-studio-code"
         }
+      },
+      "authy": {
+        "version": "1.8.0",
+        "options": {
+          "full_name": "authy"
+        }
       }
     }
   },
