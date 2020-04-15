@@ -13,54 +13,86 @@
   default = simple
 
 [alias]
-  a = add
+  a  = add
   aa = add .
-  b = branch
-  bd = branch -D
+
+  b   = branch
+  bd  = branch -D
   bdm = "!git for-each-ref refs/heads/ '--format=%(refname:short)' | while read branch; do mergeBase=$(git merge-base master $branch) && [[ $(git cherry master $(git commit-tree $(git rev-parse $branch^{tree}) -p $mergeBase -m _)) == '-'* ]] && git branch -D $branch; done"
-  c = commit
-  co = checkout
+
+  c   = commit
+  cd  = commit --amend -C HEAD
+  cda = commit --amend -C HEAD -a
+
+  co  = checkout
   cob = checkout -b
   com = checkout master
-  cp = cherry-pick
+
+  cp  = cherry-pick
   cpa = cherry-pick --abort
   cpc = cherry-pick --continue
-  d = diff
+
+  d  = diff
   dc = diff --cached
   dm = diff master
-  e = reset
-  eh = reset --hard
+
+  e   = reset
+  e-  = "!f() { git reset HEAD~$1; }; f"
+  eh  = reset --hard
+  eh- = "!f() { git reset --hard HEAD~$1; }; f"
   ehh = "!f() { git reset --hard HEAD~$1; }; f"
-  f = commit --fixup
+
+  f  = commit --fixup
+  f- = "!f() { git commit --fixup HEAD~$1; }; f"
   fh = "!f() { git commit --fixup HEAD~$1; }; f"
-  i = bisect
+
+  i  = bisect
   ib = bisect bad
   ig = bisect good
   ir = bisect reset
   is = bisect start
-  jedi = push --force-with-lease origin HEAD
+
+  k  = cherry-pick
+  ka = cherry-pick --abort
+  kc = cherry-pick --continue
+
   l = log --pretty=oneline --abbrev-commit
-  m = commit --amend -C HEAD
+
+  m  = commit --amend -C HEAD
   ma = commit --amend -C HEAD -a
-  p = push -u origin HEAD
+
+  o  = checkout
+  ob = checkout -b
+  om = checkout master
+
+  p  = push -u origin HEAD
   pf = push --force-with-lease -u origin HEAD
-  q = rebase -i --autosquash
-  qh = "!f() { git rebase --autosquash HEAD~$1; }; f"
+
+  q   = rebase -i --autosquash
+  q-  = "!f() { git rebase --autosquash HEAD~$1; }; f"
+  qh  = "!f() { git rebase --autosquash HEAD~$1; }; f"
+  qi- = "!f() { git rebase -i --autosquash HEAD~$1; }; f"
   qih = "!f() { git rebase -i --autosquash HEAD~$1; }; f"
-  qm = rebase --autosquash master
+  qm  = rebase --autosquash master
   qim = rebase -i --autosquash master
-  r = rebase
-  ra = rebase --abort
-  rc = rebase --continue
+
+  r   = rebase
+  ra  = rebase --abort
+  rc  = rebase --continue
   rem = rebase master
-  ri = rebase -i
+  ri  = rebase -i
+  ri- = "!f() { git rebase -i HEAD~$1; }; f"
   rih = "!f() { git rebase -i HEAD~$1; }; f"
   rim = rebase -i master
-  rs = rebase --skip
-  s = show
+  rs  = rebase --skip
+
+  s  = show
+  s- = "!f() { git show HEAD~$1; }; f"
   sh = "!f() { git show HEAD~$1; }; f"
-  u = !git pull -r origin $(git symbolic-ref --short HEAD)
+
+  u  = pull
   up = !git pull -r origin $(git symbolic-ref --short HEAD)
+  ur = !git pull -r origin $(git symbolic-ref --short HEAD)
 
 [gitsh]
   prompt = %c%b%w
