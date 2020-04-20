@@ -17,5 +17,6 @@
         80,
         100
     ],
-    "window.zoomLevel": 0
+    "window.zoomLevel": 0,
+    "diffEditor.renderSideBySide": false
 }
