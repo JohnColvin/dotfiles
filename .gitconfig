@@ -21,19 +21,16 @@
   bdm = "!git for-each-ref refs/heads/ '--format=%(refname:short)' | while read branch; do mergeBase=$(git merge-base master $branch) && [[ $(git cherry master $(git commit-tree $(git rev-parse $branch^{tree}) -p $mergeBase -m _)) == '-'* ]] && git branch -D $branch; done"
 
   c   = commit
+  ca  = commit -a
+  cam = commit -a -m
   cd  = commit --amend -C HEAD
   cda = commit --amend -C HEAD -a
-
-  co  = checkout
-  cob = checkout -b
-  com = checkout master
-
-  cp  = cherry-pick
-  cpa = cherry-pick --abort
-  cpc = cherry-pick --continue
+  cm  = commit -m
 
   d  = diff
+  d-  = "!f() { git diff HEAD~$1; }; f"
   dc = diff --cached
+  dc-  = "!f() { git diff --cached HEAD~$1; }; f"
   dm = diff master
 
   e   = reset
@@ -45,6 +42,10 @@
   f  = commit --fixup
   f- = "!f() { git commit --fixup HEAD~$1; }; f"
   fh = "!f() { git commit --fixup HEAD~$1; }; f"
+
+  h = stash
+  hp = stash pop
+  hy = stash apply
 
   i  = bisect
   ib = bisect bad
@@ -62,6 +63,7 @@
   ma = commit --amend -C HEAD -a
 
   o  = checkout
+  oa  = checkout .
   ob = checkout -b
   om = checkout master
 
@@ -69,11 +71,11 @@
   pf = push --force-with-lease -u origin HEAD
 
   q   = rebase -i --autosquash
-  q-  = "!f() { git rebase --autosquash HEAD~$1; }; f"
+  q-  = "!f() { git rebase -i --autosquash HEAD~$1; }; f"
   qh  = "!f() { git rebase --autosquash HEAD~$1; }; f"
   qi- = "!f() { git rebase -i --autosquash HEAD~$1; }; f"
   qih = "!f() { git rebase -i --autosquash HEAD~$1; }; f"
-  qm  = rebase --autosquash master
+  qm  = rebase -i --autosquash master
   qim = rebase -i --autosquash master
 
   r   = rebase
@@ -92,7 +94,11 @@
 
   u  = pull
   up = !git pull -r origin $(git symbolic-ref --short HEAD)
-  ur = !git pull -r origin $(git symbolic-ref --short HEAD)
+  ur = pull -r
+
+  x = rm
+
+  y = apply
 
 [gitsh]
   prompt = %c%b%w
