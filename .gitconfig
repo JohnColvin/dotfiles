@@ -23,8 +23,6 @@
   c   = commit
   ca  = commit -a
   cam = commit -a -m
-  cd  = commit --amend -C HEAD
-  cda = commit --amend -C HEAD -a
   cm  = commit -m
 
   d  = diff
@@ -37,11 +35,9 @@
   e-  = "!f() { git reset HEAD~$1; }; f"
   eh  = reset --hard
   eh- = "!f() { git reset --hard HEAD~$1; }; f"
-  ehh = "!f() { git reset --hard HEAD~$1; }; f"
 
   f  = commit --fixup
   f- = "!f() { git commit --fixup HEAD~$1; }; f"
-  fh = "!f() { git commit --fixup HEAD~$1; }; f"
 
   h = stash
   hp = stash pop
@@ -72,9 +68,7 @@
 
   q   = rebase -i --autosquash
   q-  = "!f() { git rebase -i --autosquash HEAD~$1; }; f"
-  qh  = "!f() { git rebase --autosquash HEAD~$1; }; f"
   qi- = "!f() { git rebase -i --autosquash HEAD~$1; }; f"
-  qih = "!f() { git rebase -i --autosquash HEAD~$1; }; f"
   qm  = rebase -i --autosquash master
   qim = rebase -i --autosquash master
 
@@ -84,16 +78,13 @@
   rem = rebase master
   ri  = rebase -i
   ri- = "!f() { git rebase -i HEAD~$1; }; f"
-  rih = "!f() { git rebase -i HEAD~$1; }; f"
   rim = rebase -i master
   rs  = rebase --skip
 
   s  = show
   s- = "!f() { git show HEAD~$1; }; f"
-  sh = "!f() { git show HEAD~$1; }; f"
 
   u  = pull
-  up = !git pull -r origin $(git symbolic-ref --short HEAD)
   ur = pull -r
 
   x = rm
