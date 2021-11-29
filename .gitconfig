@@ -33,6 +33,7 @@
 
   e   = reset
   e-  = "!f() { git reset HEAD~$1; }; f"
+  em  = reset master
   eh  = reset --hard
   eh- = "!f() { git reset --hard HEAD~$1; }; f"
 
