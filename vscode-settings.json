@@ -1,5 +1,4 @@
 {
-  "workbench.activityBar.visible": false,
   "editor.minimap.enabled": false,
   "workbench.colorCustomizations": {
     "statusBar.background": "#303030",
@@ -33,5 +32,7 @@
   ],
   "[javascript]": {
     "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
-  }
+  },
+  "workbench.activityBar.location": "hidden",
+  "editor.lightbulb.enabled": "off"
 }

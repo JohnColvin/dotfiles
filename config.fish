@@ -1,22 +1,22 @@
-set PATH /usr/local/bin /usr/bin /bin /usr/sbin /sbin
+set PATH /opt/homebrew/bin /usr/local/bin /usr/bin /bin /usr/sbin /sbin
 
-set EDITOR atom
+set EDITOR code
 
-alias b bundle
-alias be "bundle exec"
-alias dbm "bundle exec rake db:migrate"
-alias dbr "bundle exec rake db:rollback"
-alias dbtp "bundle exec rake db:test:prepare"
+alias bs ./bin/setup
+alias d docker
+alias dk "d compose"
+alias dku "dk up"
+alias dkr "dk run --rm"
+alias dkra "dkr --rm app"
+alias dkrw "dkr --rm webpack"
+alias d- "docker compose run --rm app"
+alias d-b "dkra bundle"
+alias d-rc "dkra rails c"
+alias d-ni "dkrw npm install --no-save"
+alias d-nr "dkrw npm run"
+alias d-nrw "dkrw npm run watch"
+alias d-nt "dkrw npm test"
 alias g git
-alias k rake
-alias ni "npm install --no-save"
-alias nm "npm run mobile"
-alias nr "npm run"
-alias ns "npm run start"
-alias r rails
-alias sk "bundle exec sidekiq -C ./config/sidekiq.yml"
-alias un "bundle exec unicorn -c ./config/unicorn.development.rb"
-alias wps "env NODE_ENV=development ./node_modules/.bin/webpack serve --config config/webpack.config.js"
 
 set DOCKER_HOST tcp://192.168.64.2:2375
 
@@ -35,4 +35,6 @@ end
 
 set fish_greeting
 
-status --is-interactive; and source (rbenv init -|psub)
+status --is-interactive
+
+source /opt/homebrew/opt/asdf/libexec/asdf.fish

@@ -4,19 +4,12 @@ sudo -v
 
 brew bundle --file=~/src/dotfiles/Brewfile
 
-bash ~/src/dotfiles/.macos
-
-npm install -g n
-
 ln -sf ~/src/dotfiles/.gitconfig ~/.gitconfig
 ln -sf ~/src/dotfiles/.gitignore ~/.gitignore
 mkdir ~/.config/fish
 ln -sf ~/src/dotfiles/config.fish ~/.config/fish/config.fish
-mkdir ~/.bundle
-ln -sf ~/src/dotfiles/bundler-config ~/.bundle/config
 ln -sf ~/src/dotfiles/vscode-settings.json ~/Library/Application\ Support/Code/User/settings.json
-ln -sf ~/src/dotfiles/.gemrc ~/.gemrc
-sudo ln -sf ~/src/dotfiles/hosts /etc/hosts
+sudo ln -f ~/src/dotfiles/hosts /etc/hosts
 
 if [[ $(dscl . -read /Users/`id -un`/ UserShell) =~ .*fish$ ]];
 then
