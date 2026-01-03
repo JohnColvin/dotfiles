@@ -11,28 +11,26 @@
   "files.insertFinalNewline": true,
   "[ruby]": {},
   "files.autoSave": "onFocusChange",
-  "editor.rulers": [
-    80,
-    100
-  ],
+  "editor.rulers": [80, 100],
   "diffEditor.renderSideBySide": false,
   "editor.formatOnSave": true,
   "editor.fontSize": 15,
-  "bracket-pair-colorizer-2.colors": [
-    "Gold",
-    "HotPink",
-    "Lime"
-  ],
+  "bracket-pair-colorizer-2.colors": ["Gold", "HotPink", "Lime"],
   "bracket-pair-colorizer-2.activeScopeCSS": [
-
     "borderStyle : solid",
     "borderWidth : 1px",
     "borderColor : {color}",
     "opacity: 0.5"
   ],
   "[javascript]": {
-    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "workbench.activityBar.location": "hidden",
-  "editor.lightbulb.enabled": "off"
+  "editor.lightbulb.enabled": "off",
+  "files.associations": {
+    "*.slm": "slim"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

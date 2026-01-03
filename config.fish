@@ -38,3 +38,7 @@ set fish_greeting
 status --is-interactive
 
 source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
+# Added by OrbStack: command-line tools and integration
+# This won't be added again if you remove it.
+source ~/.orbstack/shell/init2.fish 2>/dev/null || :
