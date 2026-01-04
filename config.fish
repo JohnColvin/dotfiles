@@ -1,5 +1,7 @@
 set PATH /opt/homebrew/bin /usr/local/bin /usr/bin /bin /usr/sbin /sbin
 
+brew shellenv | source
+
 set EDITOR code
 
 alias bs ./bin/setup
@@ -36,8 +38,6 @@ end
 set fish_greeting
 
 status --is-interactive
-
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
 
 # Added by OrbStack: command-line tools and integration
 # This won't be added again if you remove it.

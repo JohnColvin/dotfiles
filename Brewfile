@@ -1,21 +1,14 @@
-brew 'asdf'
 brew 'dash'
 brew 'fish'
 brew 'the_silver_searcher'
 
-tap 'thoughtbot/formulae'
-brew 'gitsh'
-
 cask 'flycut'
+cask 'gitx'
 cask 'iterm2'
-cask 'keepingyouawake'
 cask 'orbstack'
 cask 'protonvpn'
-cask 'rowanj-gitx'
 cask 'slack'
 cask 'ungoogled-chromium'
 cask 'usb-overdrive'
 cask 'visual-studio-code'
 cask 'waterfox'
-
-tap 'homebrew/services'

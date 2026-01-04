@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+brew install readline
+cd ~/Downloads
+curl -OL https://github.com/thoughtbot/gitsh/releases/download/v0.14/gitsh-0.14.tar.gz
+tar -zxvf gitsh-0.14.tar.gz
+cd gitsh-0.14
+CPPFLAGS="-I/opt/homebrew/opt/readline/include" LDFLAGS="-L/opt/homebrew/opt/readline/lib" ./configure
+make
+sudo make install
